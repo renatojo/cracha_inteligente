@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding-top: 200px;
+    margin: auto;
+}
+
+.content{
+    background-color: rgb(204, 204, 204);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    
+}
+
+.screen{
+    background-color: grey;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quests{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.btn-quest{
+    display: block;
+}
+
+.btn-quest button{
+    width: 100%;
+}
+
+.btn-action-screen{
+    display: flex;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    gap: 3px;
+    padding: 30px;
+}
+.btn-action-screen #btn-ok{
+    border-radius: 15px;
+    padding: 5px;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.btn-action-screen button{
+    margin: 30px;
+    padding: 5px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    
+}
+
+.id-and-sector{
+    display: flex;
+
+}
+
+.id-and-sector label{
+    margin-left: 4.8rem;
+    
+}
