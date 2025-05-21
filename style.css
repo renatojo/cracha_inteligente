@@ -1,72 +1,140 @@
-body{
+/* Reset básico */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #bcb6af;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estrutura principal */
+  .badge {
+    background-color: #f3f3f3;
+    border: 6px solid #e0e0e0;
+    border-radius: 20px;
+    width: 360px; /* aumentado */
+    padding: 24px 20px 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding-top: 200px;
-    margin: auto;
-}
-
-.content{
-    background-color: rgb(204, 204, 204);
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    
-}
-
-.screen{
-    background-color: grey;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.quests{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.btn-quest{
-    display: block;
-}
-
-.btn-quest button{
+  }
+  
+  /* Tela de exibição */
+  .screen {
+    background-color: #dcdedb;
+    border: 2px solid #bfbfbf;
+    border-radius: 14px;
     width: 100%;
-}
-
-.btn-action-screen{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 18px;
+  }
+  
+  .screen h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1e1e1e;
+  }
+  
+  .sector {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 18px;
+  }
+  
+  /* Caixa de pergunta */
+  .question-box h4 {
+    font-size: 16px;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 6px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .question-box p {
+    font-size: 16px;
+    padding: 10px 6px;
+    background-color: #f0f0f0;
+    border-radius: 0 0 6px 6px;
+    border-top: none;
+  }
+  
+  /* Botões de escolha */
+  .answer-options {
     display: flex;
-    padding-left: 20px ;
-    padding-right: 20px ;
-    gap: 3px;
-    padding: 30px;
-}
-.btn-action-screen #btn-ok{
-    border-radius: 15px;
-    padding: 5px;
-    width: 3.5rem;
-    height: 3.5rem;
-}
-.btn-action-screen button{
-    margin: 30px;
-    padding: 5px;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 10px;
-    
-}
-
-.id-and-sector{
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .option {
+    padding: 10px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .option.selected {
+    background-color: #d8d8d8;
+    color: #000;
+  }
+  
+  .option:not(.selected) {
+    background-color: #2c2c2c;
+    color: white;
+  }
+  
+  /* Botões de navegação */
+  .nav-buttons {
     display: flex;
-
-}
-
-.id-and-sector label{
-    margin-left: 4.8rem;
-    
-}
+    justify-content: space-around;
+    width: 100%;
+    margin: 16px 0;
+  }
+  
+  .nav-btn, .ok-btn {
+    width: 56px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #555;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .ok-btn {
+    background-color: #3c3c3c;
+  }
+  
+  /* Rodapé com ID e Setor */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2a2a2a;
+  }
+  

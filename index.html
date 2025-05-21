@@ -1,66 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crachá Digital</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-    <div class="content">
-        <div class="screen">
-            <h1>PROTO GLOBAL</h1>
-            <form action="">
-                <div class="name">
-                    <input placeholder="Digite o nome aqui: ">
-                    <button>Conf. Nome</button>
-                </div>
-                <div class="name">
-                    <input placeholder="Digite a área de atuação: ">
-                    <button>Conf. Area</button>
-                </div>
-            </form>
-            <div class="quests">
-                <h4>Questao tal</h4>
-                <p>Pergunta aqui</p>
-            </div>
-            <div class="btn-quest">
-                <div>
-                    <button>Sim</button>
-                </div>
-                <div>
-                    <button>Não</button>
-                </div>
-            </div>
+  <div class="badge">
+    <div class="screen">
+      <h1>PROTO GLOBAL</h1>
+      <h2 class="name">Ana Souza</h2>
+      <h3 class="sector">Recursos Humanos</h3>
 
-        </div>
-        <div class="btn-action-screen">
-            <div>
-                <button>
-                    << /button>
-            </div>
-            <div>
-                <button id="btn-ok">OK</button>
-            </div>
-            <div>
-                <button>&check;</button>
-            </div>
+      <div class="question-box">
+        <h4>Questionário 1</h4>
+        <p>Você está feliz no trabalho?</p>
+      </div>
 
-        </div>
-        <div class="id-and-sector">
-            <div>
-                <label class="id">ID:#0000</label>
-            </div>
-            <div>
-                <label class="sector">SETOR: TAL</label>
-            </div>
-
-
-
-        </div>
+      <div class="answer-options">
+        <button class="option selected">Sim</button>
+        <button class="option">Não</button>
+      </div>
     </div>
-</body>
 
+    <div class="nav-buttons">
+      <button class="nav-btn">&lt;</button>
+      <button class="ok-btn">OK</button>
+      <button class="nav-btn">&#10003;</button>
+    </div>
+
+    <div class="footer">
+      <span>ID:#00123</span>
+      <span>SETOR: RH</span>
+    </div>
+  </div>
+</body>
 </html>
