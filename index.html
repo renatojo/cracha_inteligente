@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crachá Digital</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="badge">
     <div class="screen">
       <h1>PROTO GLOBAL</h1>
-      <div id="divName" ><input id="name" type="text" placeholder="Digite seu nome"></div>
-      <div id="divSector" ><input id="sector" type="text" placeholder="Digite seu setor"></div>
-      <button id="btnEnviarNomeSetor"> Envair nome e setor</button>
+      <div id="divName"><input id="name" type="text" placeholder="Digite seu nome"></div>
+      <div id="divSector"><select id="sector">
+          <option value="" disabled selected>Selecione seu setor</option>
+          <option value="RH">RH</option>
+          <option value="Financeiro">Financeiro</option>
+          <option value="TI">TI</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Produção">Produção</option>
+          <option value="Logística">Logística</option>
+        </select></div>
 
-      <div class="question-box">
-        <h4>Questionário 1</h4>
-        <p>Você está feliz no trabalho?</p>
+      <button id="btnEnviarNomeSetor"> Enviar</button>
+
+      <div id="questions" class="question-box">
+        <h4 id="title-box">Questionário 1</h4>
+        <p id="text-box">Você está feliz no trabalho?</p>
       </div>
 
       <div class="answer-options">
-        <button class="option selected">Sim</button>
-        <button class="option">Não</button>
+        <button id="btnSim" class="option selected" disabled>Sim</button>
+        <button id="btnNao" class="option" disabled>Não</button>
       </div>
+
     </div>
 
     <div class="nav-buttons">
-      <button class="nav-btn">&lt;</button>
-      <button class="ok-btn">OK</button>
-      <button class="nav-btn">&#10003;</button>
+      <button id="btnVoltar" class="nav-btn">&lt;</button>
+
     </div>
 
     <div class="footer">
@@ -36,6 +47,8 @@
       <span>SETOR: RH</span>
     </div>
   </div>
-  <script src="./script.js"></script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="static-data.js"></script>
 </body>
+
 </html>
